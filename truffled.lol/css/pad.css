@@ -1,0 +1,322 @@
+.pad-pop[hidden],
+.pad-pop [hidden] {
+  display: none !important;
+}
+.pad-pop {
+  position: fixed;
+  inset: 0;
+  z-index: 10100;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  color: var(--text, #fff);
+  font: 12px/1.4 "Poppins", Arial, sans-serif;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+.pad-pop,
+.pad-pop * {
+  box-sizing: border-box;
+  text-shadow: none !important;
+}
+.pad-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(400px, 100%);
+  max-height: calc(100dvh - 24px);
+  padding: 12px 16px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface, #1b2d2d);
+  outline: none;
+}
+.pad-wait {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 16px 0 6px;
+}
+.pad-wait b {
+  font-weight: 500;
+}
+.pad-wait span,
+.pad-game,
+.pad-status {
+  color: var(--text-muted, #b3b3b3);
+  font-size: 11px;
+}
+.pad-main {
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.pad-card.is-on .pad-wait,
+.pad-card:not(.is-on) .pad-main {
+  display: none;
+}
+.pad-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 30px 4px 0;
+}
+.pad-name {
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  font-weight: 500;
+}
+.pad-game {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pad-pop .pad-card button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: auto;
+  height: 30px;
+  margin: 0;
+  padding: 0 8px;
+  border: 0 !important;
+  border-radius: 4px !important;
+  background: transparent !important;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  box-shadow: none !important;
+  cursor: var(--cursor-link, url("/cursors/truf/link.cur")), pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.pad-pop .pad-card button:hover,
+.pad-pop .pad-card button:focus-visible,
+.pad-pop .pad-card button.pad-at,
+.pad-pop .pad-card button.is-wait {
+  background: var(--accent, #223d3d) !important;
+}
+.pad-pop .pad-card button:focus-visible,
+.pad-pop .pad-card button.pad-at,
+.pad-pop .pad-card button.is-wait {
+  outline: 1px solid var(--text-muted, #b3b3b3);
+  outline-offset: -1px;
+}
+.pad-pop .pad-card button:disabled {
+  opacity: 0.45;
+  cursor: default !important;
+}
+.pad-pop .pad-card .pad-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 1;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  color: var(--text-muted, #b3b3b3);
+  font-size: 20px;
+  line-height: 1;
+}
+.pad-visual {
+  --pad-input: #74cdbd;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 26px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+  min-height: 100px;
+  margin: 8px auto;
+}
+.pad-visual .gamepad-visual-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 164px;
+}
+.pad-visual .gamepad-visual-control {
+  fill: var(--pad-input);
+  fill-opacity: 0;
+}
+.pad-visual .gamepad-stick-indicator {
+  fill: var(--pad-input);
+  stroke: var(--surface, #1b2d2d);
+  stroke-width: 12;
+}
+.pad-visual .gamepad-trigger-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 4px 2px;
+  overflow: hidden;
+  border: 1px solid var(--border, #203b3b);
+  border-radius: 3px;
+}
+.pad-visual .gamepad-trigger-fill {
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--gamepad-trigger-value, 0%);
+  background: var(--pad-input);
+  opacity: 0.25;
+}
+.pad-visual .gamepad-trigger-image {
+  position: relative;
+  width: 20px;
+  height: 22px;
+  object-fit: contain;
+}
+.pad-visual .gamepad-trigger-value,
+.pad-visual .gamepad-trigger-name {
+  position: relative;
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+}
+.pad-visual .gamepad-trigger-name,
+.pad-visual .gamepad-trigger-image-unavailable {
+  display: none;
+}
+.pad-visual .gamepad-trigger-name.visible {
+  display: block;
+}
+.pad-visual .gamepad-visual-unavailable {
+  grid-column: 1 / -1;
+  color: var(--text-muted, #b3b3b3);
+}
+.pad-axes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 2px 0 12px;
+}
+.pad-axes span,
+.pad-axes output {
+  display: block;
+}
+.pad-axes span {
+  color: var(--text-muted, #b3b3b3);
+  font-size: 10px;
+}
+.pad-axes output {
+  margin-top: 2px;
+  color: var(--text, #fff);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  white-space: pre;
+}
+.pad-calibration {
+  padding: 10px 0;
+}
+.pad-calibration-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.pad-pop .pad-card .pad-calibration-actions > button {
+  background: var(--accent, #223d3d) !important;
+}
+.pad-pop .pad-card .pad-calibration-actions > button:hover {
+  background: var(--highlight, #102a2a) !important;
+}
+.pad-deadzone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  color: var(--text-muted, #b3b3b3);
+  font-size: 11px;
+}
+.pad-pop .pad-deadzone input {
+  width: 64px;
+  min-width: 0;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  accent-color: #74cdbd;
+  box-shadow: none;
+}
+.pad-deadzone output {
+  min-width: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.pad-status {
+  display: block;
+  margin-top: 6px;
+}
+.pad-bindings {
+  margin-top: 2px;
+}
+.pad-bindings summary {
+  padding: 10px 0;
+  color: var(--text, #fff);
+  cursor: pointer;
+}
+.pad-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2px 10px;
+  max-height: 200px;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.pad-pop .pad-card .pad-row {
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 0 6px;
+}
+.pad-row > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pad-row kbd {
+  flex: 0 0 auto;
+  padding: 0;
+  color: var(--text, #fff);
+  font: inherit;
+  font-size: 11px;
+}
+.pad-row.is-none kbd {
+  color: var(--text-muted, #b3b3b3);
+}
+.pad-pop .pad-card .pad-row.is-hit {
+  background: var(--accent, #223d3d) !important;
+}
+.pad-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 6px;
+  color: var(--text-muted, #b3b3b3);
+  font-size: 10px;
+}
+.pad-cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  font-size: 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pad-pop .pad-card button {
+    transition: none;
+  }
+}

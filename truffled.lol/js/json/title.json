@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Google",
+    "title": "Google",
+    "icon": "https://www.google.com/favicon.ico"
+  },
+  {
+    "name": "Google Docs",
+    "title": "Google Docs",
+    "icon": "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico"
+  },
+  {
+    "name": "Google Drive",
+    "title": "My Drive - Google Drive",
+    "icon": "https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_48dp.png"
+  },
+  {
+    "name": "Google Classroom",
+    "title": "Google Classroom",
+    "icon": "https://ssl.gstatic.com/classroom/favicon.png"
+  },
+  {
+    "name": "Google Slides",
+    "title": "Google Slides",
+    "icon": "https://ssl.gstatic.com/docs/presentations/images/favicon5.ico"
+  },
+  {
+    "name": "Google Sheets",
+    "title": "Google Sheets",
+    "icon": "https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"
+  },
+  {
+    "name": "Gmail",
+    "title": "Gmail",
+    "icon": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+  },
+  {
+    "name": "IXL",
+    "title": "IXL | Dashboard",
+    "icon": "https://www.ixl.com/favicon.ico"
+  },
+  {
+    "name": "Canvas",
+    "title": "Dashboard",
+    "icon": "https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico"
+  },
+  {
+    "name": "Khan Academy",
+    "title": "Khan Academy | Free Online Courses",
+    "icon": "https://cdn.kastatic.org/images/favicon.ico"
+  },
+  {
+    "name": "Clever",
+    "title": "Clever | Portal",
+    "icon": "https://apps.clever.com/favicon.ico"
+  },
+  {
+    "name": "Schoology",
+    "title": "Home | Schoology",
+    "icon": "https://icons.duckduckgo.com/ip3/app.schoology.com.ico"
+  },
+  {
+    "name": "Quizlet",
+    "title": "Quizlet",
+    "icon": "https://quizlet.com/favicon.ico"
+  },
+  {
+    "name": "Edpuzzle",
+    "title": "Edpuzzle",
+    "icon": "https://edpuzzle.imgix.net/favicons/favicon-32.png"
+  },
+  {
+    "name": "Desmos",
+    "title": "Desmos | Graphing Calculator",
+    "icon": "https://www.desmos.com/assets/img/apps/graphing/favicon.ico"
+  },
+  {
+    "name": "Delta Math",
+    "title": "DeltaMath",
+    "icon": "https://www.deltamath.com/favicon.ico"
+  },
+  {
+    "name": "Quizizz",
+    "title": "Quizizz",
+    "icon": "https://quizizz.com/favicon.ico"
+  },
+  {
+    "name": "PowerSchool",
+    "title": "PowerSchool",
+    "icon": "https://www.powerschool.com/favicon.ico"
+  },
+  {
+    "name": "i-Ready",
+    "title": "i-Ready",
+    "icon": "https://login.i-ready.com/favicon.ico"
+  },
+  {
+    "name": "Blooket",
+    "title": "Blooket",
+    "icon": "https://www.blooket.com/favicon.ico"
+  },
+  {
+    "name": "Kahoot",
+    "title": "Kahoot!",
+    "icon": "https://kahoot.com/favicon.ico"
+  },
+  {
+    "name": "Gimkit",
+    "title": "Gimkit - live learning game show",
+    "icon": "https://www.gimkit.com/favicon.png"
+  },
+  {
+    "name": "Cool Math Games",
+    "title": "Cool Math Games - Free Online Games for Learning and Fun",
+    "icon": "https://www.coolmathgames.com/favicon.ico"
+  },
+  {
+    "name": "ClassLink",
+    "title": "ClassLink",
+    "icon": "https://cdn.prod.website-files.com/5d6db64572061db9c481aaeb/69cd76ca1bcc0a2d58ec006b_classlink-favicon_v2.png"
+  },
+  {
+    "name": "Nearpod",
+    "title": "Nearpod: You'll wonder how you taught without it",
+    "icon": "https://nearpod.com/favicon.ico"
+  },
+  {
+    "name": "Prodigy",
+    "title": "Prodigy",
+    "icon": "https://cdn.prod.website-files.com/67290eb56db5c02dee62db8d/67ad86542f1cda144512a37b_favicon-32x32.png"
+  },
+  {
+    "name": "ST Math",
+    "title": "ST Math",
+    "icon": "https://www.stmath.com/favicon.ico"
+  },
+  {
+    "name": "Google Meet",
+    "title": "Google Meet",
+    "icon": "https://meet.google.com/favicon.ico"
+  }
+]
